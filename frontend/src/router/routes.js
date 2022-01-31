@@ -26,9 +26,6 @@ const routes = [{
              middleware: [guest],
          },
     },
-
-    // Always leave this as last one,
-    // but you can also remove it
     {
         path: '/:catchAll(.*)*',
         component: () => import('../pages/Error404.vue')
